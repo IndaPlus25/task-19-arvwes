@@ -1,22 +1,26 @@
 ### Deadline:
 This is a two week assignment with two deadlines:
 
-* Implementation: **Friday 5th March**
-* Evaluation: **Friday 19th March** (extended to avoid exam collision!)
+* Implementation: **Friday 4th March**
+* Evaluation: **Friday 11th March**
 
 Work for both weeks will be stored in this repository.
 
 ### Instructions
 For instructions on how to do and submit the assignment, please see the
-[assignments section of the course instructions](https://gits-15.sys.kth.se/inda-20/course-instructions#assignments).
+[assignments section of the course instructions](https://gits-15.sys.kth.se/inda-21/course-instructions#assignments).
 
 ### Preparation
-No OLI material this week, but the former course text is still available:
 
+You must read and answer the questions in the OLI material:
+- Read [Module 10: Quicksort](https://kth.oli.cmu.edu/jcourse/webui/syllabus/module.do?context=4664ba89ac1f08884744e83790a96932)
+  - If you have not done so, goto https://kth.oli.cmu.edu/, signup and register for the course key `dd1338-ht21`
+
+You may also want to read the former course text:
 * [Quicksort Optimizations](https://yourbasic.org/golang/quicksort-optimizations/)
     - **IMPORTANT:** The pseudo code in the above text may be a bit difficult
       to interpret if you have not programmed in Go. Please see
-      [this supplement](https://gits-15.sys.kth.se/inda-20/extra-reading-material/blob/master/quicksort/README.md)
+      [this supplement](https://gits-15.sys.kth.se/inda-21/extra-reading-material/blob/master/quicksort/README.md)
       that contains rewritten pseudocode along with some practical tips.
 
 ### Overview
@@ -189,7 +193,7 @@ class QuickSort implements IntSorter {
 
 #### Kattis Submission
 
-**Submit your implementation [here](https://kth.kattis.com/courses/DD1338/algdat20)**. Please note this link may not yet be active, but just check back later. Remember to register for DD1338 in order for your submission to be valid.
+**Submit your implementation [here](https://kth.kattis.com/courses/DD1338/algdat21)**. Please note this link may not yet be active, but just check back later. Remember to register for DD1338 in order for your submission to be valid.
 
 **Once you have a successful run, please copy the submission ID and put it in the [docs/submission.txt](docs/submission.txt) file.** There are no limits on the number of submissions, so you can try out your different variations of Quicksort.
 
