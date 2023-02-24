@@ -1,9 +1,5 @@
 # A Study of Quicksort
 
-Your Name Here
-INDA Group XX
-Year
-
 ## Characteristics and Complexity
 
 	In this section, briefly discuss:

@@ -1,29 +1,40 @@
-### Deadline:
+# Quicksort
+Quicksort stands as one of the top 10 of algorithms (https://www.computer.org/csdl/magazine/cs/2000/01/c1022/13rRUxBJhBm). It is fascinating not only because it is one of the fastest general sorting algorithms, but also because it is so open to experimentation and variation. The basic implementation is not considered overly challenging, but the real challenge comes from tuning varients to outperform it and defend against its inherent fragility.
+
+### 💀 Deadline
 This is a two week assignment with two deadlines:
 
-* Implementation: **Friday 4th March**
-* Evaluation: **Friday 11th March**
+* Implementation: **Friday 3th March**
+* Evaluation & Report: **Friday 10th March**
 
-Work for both weeks will be stored in this repository.
+**Important: This task is mandatory and a pass is required to complete DD1338.**  
 
-### Instructions
+### 👩‍🏫 Instructions
 For instructions on how to do and submit the assignment, please see the
-[assignments section of the course instructions](https://gits-15.sys.kth.se/inda-21/course-instructions#assignments).
+[assignments section of the course instructions](https://gits-15.sys.kth.se/inda-22/course-instructions#assignments).
 
-### Preparation
+### 📝 Preparation
+- Read and answer questions in [Module 10: Quicksort](https://kth.oli.cmu.edu/jcourse/webui/syllabus/module.do?context=8af631c5ac1f08886add429f0d1b2ec1)
+  - If you have not done so, goto https://kth.oli.cmu.edu/, signup and register for the course key `dd1338-ht22`
 
-You must read and answer the questions in the OLI material:
-- Read [Module 10: Quicksort](https://kth.oli.cmu.edu/jcourse/webui/syllabus/module.do?context=4664ba89ac1f08884744e83790a96932)
-  - If you have not done so, goto https://kth.oli.cmu.edu/, signup and register for the course key `dd1338-ht21`
+### ✅ Learning Goals
+* Implement the classic quicksort algorithm
+* Develop variations that improve performance and reduce fragility of quicksort
+* Test variations against unseen datasets with Kattis
+* Empirically evaluate quicksort
+* Summarise your findings as a short technical report
 
-You may also want to read the former course text:
-* [Quicksort Optimizations](https://yourbasic.org/golang/quicksort-optimizations/)
-    - **IMPORTANT:** The pseudo code in the above text may be a bit difficult
-      to interpret if you have not programmed in Go. Please see
-      [this supplement](https://gits-15.sys.kth.se/inda-21/extra-reading-material/blob/master/quicksort/README.md)
-      that contains rewritten pseudocode along with some practical tips.
+### 🚨 Troubleshooting Guide
+If you have any questions or problems, follow this procedure: <br/>
 
-### Overview
+1. Look at this week's [posted issues](https://gits-15.sys.kth.se/inda-22/help/issues). Are other students asking about your problem?
+2. If not, post a question yourself by creating a [New Issue](https://gits-15.sys.kth.se/inda-22/help/issues/new). Add a descriptive title, beginning with "Task *x*: *summary of problem here*"
+3. Ask a TA in person during the [weekly lab](https://queue.csc.kth.se/Queue/INDA). Check your schedule to see when the next lab is.
+
+We encourage you to discuss with your course friends, but **do not share answers**! Similarily, use of AI services  🤖 are great to *help explain things*, but please **do not submit AI-generated solutions** - you must be both responsible for your own solutions and be able to explain them under examination.
+
+### 🏛 Assignment
+
 There's a lot of information in this repo. Here's an overview of what you need
 to accomplish (and submit) for each of the weeks:
 
@@ -149,51 +160,9 @@ Kattis will test both that your implementations are correct, and how fast they
 run. _Note that the run times on Kattis can differ between different runs on the
 same code, especially if you have randomisation!_
 
-One of the main problems we have with Java is that the **default I/O will be
-slow**. To make this faster, we can use the [`Kattio`](src/Kattio.java) class
-provided to significantly speed things up.
-
-> **Assistant's note:** It is really important to realise that we are abusing
-> the constructor here just to overcome the slow I/O used by default on this
-> task. You can still submit your Quicksort submission without using Kattio, but
-> you will incur a time cost of about 2 seconds for I/O. Note, you must submit
-> the Kattio.java file along with your QuickSort.java file when submitting,
-> otherwise an error will occur.
-
-Here is a skeleton `QuickSort` class to give you an idea how to use `Kattio`:
-
-```java
-import java.io.IOException;
-
-class QuickSort implements IntSorter {
-
-    public QuickSort() throws IOException {
-        Kattio io = new Kattio(System.in, System.out);
-        int n = io.getInt(); // number of elements to sort
-        int[] v = new int[n];
-        int i = 0;
-        // read in problem array
-        while (io.hasMoreTokens()) {
-            v[i++] = io.getInt();
-        }
-        sort(v);
-        // output sorted array as solution
-        for (int k : v) {
-            io.println(k);
-        }
-        io.close();
-        System.exit(0);
-    }
-
-    public void sort(int[] v) {
-        // implement this!
-    }
-}
-```
-
 #### Kattis Submission
 
-**Submit your implementation [here](https://kth.kattis.com/courses/DD1338/algdat21)**. Please note this link may not yet be active, but just check back later. Remember to register for DD1338 in order for your submission to be valid.
+**Submit your implementation [here](https://kth.kattis.com/courses/DD1338/algdat22)**. Please note that if you are testing varients that do not use a randomised pivot then some test cases will always fail.
 
 **Once you have a successful run, please copy the submission ID and put it in the [docs/submission.txt](docs/submission.txt) file.** There are no limits on the number of submissions, so you can try out your different variations of Quicksort.
 
@@ -265,3 +234,10 @@ following sections (a template can be found in `docs`):
 3. Explanation of each test you performed and how you ensured accurate results
 4. Presentation of results using tables and appropriate charts for all tests
 5. Discussion of your findings
+
+### 🙏 Acknowledgment
+This task was designed by:               <br>
+Simon Larsén                             <br>
+Anton Lyxell                             <br>
+Stefan Nilsson                           <br>
+Ric Glassey                              <br>
