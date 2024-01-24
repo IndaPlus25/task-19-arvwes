@@ -4,18 +4,20 @@ Quicksort stands as one of the top 10 of algorithms (https://www.computer.org/cs
 ### 💀 Deadline
 This is a two week assignment with two deadlines:
 
-* Implementation: **Friday 3th March**
-* Evaluation & Report: **Friday 10th March**
+* Implementation: **Friday 1st March**
+* Evaluation & Report: **Friday 8th March**
 
 **Important: This task is mandatory and a pass is required to complete DD1338.**  
 
 ### 👩‍🏫 Instructions
 For instructions on how to do and submit the assignment, please see the
-[assignments section of the course instructions](https://gits-15.sys.kth.se/inda-22/course-instructions#assignments).
+[assignments section of the course instructions](https://gits-15.sys.kth.se/inda-23/course-instructions#assignments).
 
 ### 📝 Preparation
-- Read and answer questions in [Module 10: Quicksort](https://kth.oli.cmu.edu/jcourse/webui/syllabus/module.do?context=8af631c5ac1f08886add429f0d1b2ec1)
-  - If you have not done so, goto https://kth.oli.cmu.edu/, signup and register for the course key `dd1338-ht22`
+- Read and answer all questions in Module 10: [Quicksort](https://qbl.sys.kth.se/sections/dd1338_ht23_algoritmer_och_dat/container/quicksort)
+- You can access the OLI material both:
+  - via Canvas (see the [OLI Torus SE](https://canvas.kth.se/courses/42831/external_tools/4248) link in the left menu)
+  - or directly at this [webpage](https://qbl.sys.kth.se/sections/dd1338_ht23_algoritmer_och_dat/container/quicksort)
 
 ### ✅ Learning Goals
 * Implement the classic quicksort algorithm
@@ -27,8 +29,8 @@ For instructions on how to do and submit the assignment, please see the
 ### 🚨 Troubleshooting Guide
 If you have any questions or problems, follow this procedure: <br/>
 
-1. Look at this week's [posted issues](https://gits-15.sys.kth.se/inda-22/help/issues). Are other students asking about your problem?
-2. If not, post a question yourself by creating a [New Issue](https://gits-15.sys.kth.se/inda-22/help/issues/new). Add a descriptive title, beginning with "Task *x*: *summary of problem here*"
+1. Look at this week's [posted issues](https://gits-15.sys.kth.se/inda-23/help/issues). Are other students asking about your problem?
+2. If not, post a question yourself by creating a [New Issue](https://gits-15.sys.kth.se/inda-23/help/issues/new). Add a descriptive title, beginning with "Task *x*: *summary of problem here*"
 3. Ask a TA in person during the [weekly lab](https://queue.csc.kth.se/Queue/INDA). Check your schedule to see when the next lab is.
 
 We encourage you to discuss with your course friends, but **do not share answers**! Similarily, use of AI services  🤖 are great to *help explain things*, but please **do not submit AI-generated solutions** - you must be both responsible for your own solutions and be able to explain them under examination.
@@ -162,7 +164,7 @@ same code, especially if you have randomisation!_
 
 #### Kattis Submission
 
-**Submit your implementation [here](https://kth.kattis.com/courses/DD1338/algdat22)**. Please note that if you are testing varients that do not use a randomised pivot then some test cases will always fail.
+**Submit your implementation [here](https://kth.kattis.com/courses/DD1338/algdat23)**. Please note that if you are testing varients that do not use a randomised pivot then some test cases will always fail. Obs - the Kattis course may not be available yet if you are attempting this task early.
 
 **Once you have a successful run, please copy the submission ID and put it in the [docs/submission.txt](docs/submission.txt) file.** There are no limits on the number of submissions, so you can try out your different variations of Quicksort.
 
@@ -241,3 +243,4 @@ Simon Larsén                             <br>
 Anton Lyxell                             <br>
 Stefan Nilsson                           <br>
 Ric Glassey                              <br>
+Marcus Dicander                          <br>
