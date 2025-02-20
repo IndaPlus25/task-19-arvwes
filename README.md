@@ -1,25 +1,25 @@
 # Quicksort
-Quicksort stands as one of the top 10 of algorithms (https://www.computer.org/csdl/magazine/cs/2000/01/c1022/13rRUxBJhBm). It is fascinating not only because it is one of the fastest general sorting algorithms, but also because it is so open to experimentation and variation. The basic implementation is not considered overly challenging, but the real challenge comes from tuning varients to outperform it and defend against its inherent fragility.
+Quicksort stands as one of the [top 10 of algorithms](https://www.computer.org/csdl/magazine/cs/2000/01/c1022/13rRUxBJhBm). It is fascinating not only because it is one of the fastest general sorting algorithms, but also because it is so open to experimentation and variation. The basic implementation is not considered overly challenging, but the real challenge comes from tuning varients to outperform it and defend against its inherent fragility.
 
 ### 💀 Deadline
-This is a two week assignment with two deadlines:
+This is a two part assignment with two deadlines:
 
-* Implementation: **Friday 1st March**
-* Evaluation & Report: **Friday 8th March**
+* Implementation: **Friday 28th February**
+* Evaluation & Report: **Friday 7th March**
 
-**Important: This task is mandatory and a pass is required to complete DD1338.**  
+**Important: This task is mandatory and a pass on both parts is required to complete DD1338.**  
 
 ### 👩‍🏫 Instructions
 For instructions on how to do and submit the assignment, please see the
-[assignments section of the course instructions](https://gits-15.sys.kth.se/inda-23/course-instructions#assignments).
+[assignments section of the course instructions](https://gits-15.sys.kth.se/inda-24/course-instructions#assignments).
 
 ### 📝 Preparation
-- Read and answer all questions in Module 10: [Quicksort](https://qbl.sys.kth.se/sections/dd1338_ht23_algoritmer_och_dat/container/quicksort)
-- You can access the OLI material both:
-  - via Canvas (see the [OLI Torus SE](https://canvas.kth.se/courses/42831/external_tools/4248) link in the left menu)
-  - or directly at this [webpage](https://qbl.sys.kth.se/sections/dd1338_ht23_algoritmer_och_dat/container/quicksort)
+
+- Review the lecture slides: [part one here](https://docs.google.com/presentation/d/1GTP8IivW_sZ4cx-6eSFFFHpp3cJ7F1QmCSQW3vo0s04/edit#slide=id.p) and [part two here](https://docs.google.com/presentation/d/1r-uw6k9o5yV21UV0NFecOXFX7MY3IPHNn8sMNhcHMz0/edit#slide=id.p)
+- Read and answer all questions in Module 10: [Quicksort](https://qbl.sys.kth.se/sections/dd1338_ht24_algorithms_and_dat/container/quicksort)
 
 ### ✅ Learning Goals
+
 * Implement the classic quicksort algorithm
 * Develop variations that improve performance and reduce fragility of quicksort
 * Test variations against unseen datasets with Kattis
@@ -27,10 +27,11 @@ For instructions on how to do and submit the assignment, please see the
 * Summarise your findings as a short technical report
 
 ### 🚨 Troubleshooting Guide
+
 If you have any questions or problems, follow this procedure: <br/>
 
-1. Look at this week's [posted issues](https://gits-15.sys.kth.se/inda-23/help/issues). Are other students asking about your problem?
-2. If not, post a question yourself by creating a [New Issue](https://gits-15.sys.kth.se/inda-23/help/issues/new). Add a descriptive title, beginning with "Task *x*: *summary of problem here*"
+1. Look at this week's [posted issues](https://gits-15.sys.kth.se/inda-24/help/issues). Are other students asking about your problem?
+2. If not, post a question yourself by creating a [New Issue](https://gits-15.sys.kth.se/inda-24/help/issues/new). Add a descriptive title, beginning with "Task *x*: *summary of problem here*"
 3. Ask a TA in person during the [weekly lab](https://queue.csc.kth.se/Queue/INDA). Check your schedule to see when the next lab is.
 
 We encourage you to discuss with your course friends, but **do not share answers**! Similarily, use of AI services  🤖 are great to *help explain things*, but please **do not submit AI-generated solutions** - you must be both responsible for your own solutions and be able to explain them under examination.
@@ -164,7 +165,7 @@ same code, especially if you have randomisation!_
 
 #### Kattis Submission
 
-**Submit your implementation [here](https://kth.kattis.com/courses/DD1338/algdat23)**. Please note that if you are testing varients that do not use a randomised pivot then some test cases will always fail. Obs - the Kattis course may not be available yet if you are attempting this task early.
+**Submit your implementation [here](https://kth.kattis.com/courses/DD1338/algdat24)**. Please note that if you are testing varients that do not use a randomised pivot then some test cases will always fail. Obs - the Kattis course may not be available yet if you are attempting this task early.
 
 **Once you have a successful run, please copy the submission ID and put it in the [docs/submission.txt](docs/submission.txt) file.** There are no limits on the number of submissions, so you can try out your different variations of Quicksort.
 
@@ -236,6 +237,8 @@ following sections (a template can be found in `docs`):
 3. Explanation of each test you performed and how you ensured accurate results
 4. Presentation of results using tables and appropriate charts for all tests
 5. Discussion of your findings
+
+Do try to incorporate some of what you learnt from DA1600 here - transfer of learning, yay!
 
 ### 🙏 Acknowledgment
 This task was designed by:               <br>
