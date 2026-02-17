@@ -35,3 +35,5 @@
 	* What was surprising
 	* What met your expectations
 	* Which variation was closet to Arrays.sort?
+
+**Obs!** The teachers from DA1600 have prepared a checklist for you here: [docs/da1600-guidance.md](docs/da1600-guidance.md).
