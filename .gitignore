@@ -219,3 +219,8 @@ $RECYCLE.BIN/
 Session.vim
 .netrwhist
 *~
+
+
+# Added by cargo
+
+/target
