@@ -1,6 +1,6 @@
 use crate::insertion::InsertionSort;
 use crate::sorter::IntSorter;
-use rand::RngExt;
+use rand::Rng;
 
 const INS_THRESHOLD: usize = 50;
 pub struct QuicksortFixedPivot;
@@ -21,10 +21,9 @@ impl IntSorter for QuicksortFixedPivot {
 
 impl IntSorter for QuicksortRandomPivot  {
     fn sort(&self, slice: &mut [i32]) {
-        fn random_pivot(slice: &[i32])-> usize {
-            let mut rng = rand::rng();
-            return rng.random_range(0..slice.len()-1);
-        }
+               fn random_pivot(slice: &[i32]) -> usize {
+    rand::thread_rng().gen_range(0..slice.len())
+}
         quicksort_core(slice, &random_pivot, 1);
     }
 }
@@ -40,10 +39,9 @@ impl IntSorter for QuicksortFixedPivotInsertion {
 
 impl IntSorter for QuicksortRandomPivotInsertion  {
     fn sort(&self, slice: &mut [i32]) {
-        fn random_pivot(slice: &[i32])-> usize {
-            let mut rng = rand::rng();
-            return rng.random_range(0..slice.len()-1);
-        }
+               fn random_pivot(slice: &[i32]) -> usize {
+    rand::thread_rng().gen_range(0..slice.len())
+}
         quicksort_core(slice, &random_pivot, INS_THRESHOLD);
     }
 }
