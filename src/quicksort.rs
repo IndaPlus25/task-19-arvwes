@@ -1,8 +1,8 @@
-use crate::insertion::{self, InsertionSort};
+use crate::insertion::InsertionSort;
 use crate::sorter::IntSorter;
-use rand::{Rng, RngExt};
+use rand::RngExt;
 
-const ins_threshold: usize = 50;
+const INS_THRESHOLD: usize = 50;
 pub struct QuicksortFixedPivot;
 pub struct QuicksortRandomPivot;
 
@@ -34,7 +34,7 @@ impl IntSorter for QuicksortFixedPivotInsertion {
         fn fixed_pivot(slice: &[i32]) -> usize {
             return slice.len() - 1;
         }
-        quicksort_core(slice, &fixed_pivot, ins_threshold);
+        quicksort_core(slice, &fixed_pivot, INS_THRESHOLD);
     }
 }
 
@@ -44,10 +44,12 @@ impl IntSorter for QuicksortRandomPivotInsertion  {
             let mut rng = rand::rng();
             return rng.random_range(0..slice.len()-1);
         }
-        quicksort_core(slice, &random_pivot, ins_threshold);
+        quicksort_core(slice, &random_pivot, INS_THRESHOLD);
     }
 }
-
+/**
+ * sort an array to assending order using hoare partition scheme
+ */
 fn quicksort_core<F>(slice: &mut [i32], choose_pivot: &F, insertion_threshold: usize)
 where
     F: Fn(&[i32]) -> usize,
@@ -80,8 +82,8 @@ where
         j -= 1;
     };
     let (left, right) = slice.split_at_mut(split_index+1);
-    quicksort_core(left, choose_pivot, ins_threshold);
-    quicksort_core(right, choose_pivot, ins_threshold);
+    quicksort_core(left, choose_pivot, INS_THRESHOLD);
+    quicksort_core(right, choose_pivot, INS_THRESHOLD);
 }
 
 

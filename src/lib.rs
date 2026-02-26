@@ -4,7 +4,6 @@ pub mod sorter;
 
 #[cfg(test)]
 mod test {
-    use crate::sorter;
 
     use super::insertion::InsertionSort;
     use super::quicksort::{
